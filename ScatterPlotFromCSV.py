@@ -36,10 +36,6 @@ class ScatterPlotFromCSV(Object):
                  dot_color_map = DEFAULT_DOT_COLOR_MAP,
                  dot_size = DEFAULT_DOT_SIZE            
             ):
-        """
-            axis_label: must be same type as col_name
-                        if specified
-        """
                                     
         self.__plot_title = plot_title
         self.__csv_path = csv_path

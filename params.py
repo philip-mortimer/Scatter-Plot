@@ -18,26 +18,26 @@
     <https://www.gnu.org/licenses/>.
 """
 
-plot_title = "Life Style and Life Expectancy"
+PLOT_TITLE = "Life Style and Life Expectancy"
 
 # Path of CSV file from which to load data (note
 # that example.csv was created to demonstrate this
 # program and does not contain real world data).
-csv_path = 'example.csv'
+CSV_PATH = 'example.csv'
 
 # Columns in the CSV file to be used for the x and y coordinate values 
 # of each dot in the plot.
-x_col_name = "Mean hours exercise per week"
-y_col_name = "Mean units alcohol consumed per week"
+X_COL_NAME = "Mean hours exercise per week"
+Y_COL_NAME = "Mean units alcohol consumed per week"
 
 # Column in the CSV file to be used for the colour value of each dot in
 # the plot.
-z_col_name = "Life expectancy years"
+Z_COL_NAME = "Life expectancy years"
 
-plot_file_path = 'scatter_plot'
+PLOT_FILE_PATH = 'scatter_plot'
 
-dot_color_map = 'jet'
+DOT_COLOR_MAP = 'jet'
 
-show_plot = True
+SHOW_PLOT = True
 
 

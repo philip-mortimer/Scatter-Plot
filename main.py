@@ -28,18 +28,18 @@ def main():
     plot = ScatterPlotFromCSV()
 
     # Assign settings to plot object.    
-    plot.plot_title = prm.plot_title
-    plot.csv_path = prm.csv_path    
-    plot.col_name = Names3D(prm.x_col_name, 
-                              prm.y_col_name, 
-                              prm.z_col_name)    
-    plot.plot_file_path = prm.plot_file_path
-    plot.dot_color_map = prm.dot_color_map
+    plot.plot_title = prm.PLOT_TITLE
+    plot.csv_path = prm.CSV_PATH    
+    plot.col_name = Names3D(prm.X_COL_NAME, 
+                              prm.Y_COL_NAME, 
+                              prm.Z_COL_NAME)    
+    plot.plot_file_path = prm.PLOT_FILE_PATH
+    plot.dot_color_map = prm.DOT_COLOR_MAP
  
     # Generate the file containing the plot,
     # and display the plot on the screen
     # if the show_plot parameter is True.
-    if not plot.generate(prm.show_plot):
+    if not plot.generate(prm.SHOW_PLOT):
         print(plot.err_str)
         return 1
     
